@@ -77,6 +77,10 @@ public class Bowling {
 		System.out.println("The total score is: " + totalScore);
 		
 		//Calculate total scoring using real bowling rules
-		//for(int i=0; i<
+		//for(int i=0; i<bonus.length; i++){
+			//if(bonus[i]=='X'){
+			//	totalScore = (totalScore + scores[i])+;
+			//}
+		//}
 	}
 }
