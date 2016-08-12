@@ -1,4 +1,4 @@
-package day3examples;
+package bowling;
 
 public class bowlingGame {
 	public static void main(String[] args) {
@@ -69,7 +69,7 @@ public class bowlingGame {
 																		// roll
 				scores[i + countRolls][0] = bonusRoll;
 				countRolls++;
-				if (scores[10][0] == 10) {//if first bonus roll was a strike
+				if (scores[10][0] == 10) {// if first bonus roll was a strike
 					numPins = 10; // reset pins to 10
 					bonusRoll = (int) ((Math.random() * (numPins + 1)));// store
 																		// number
@@ -78,14 +78,16 @@ public class bowlingGame {
 																		// knocked
 																		// down
 																		// in
-																		// second bonus
+																		// second
+																		// bonus
 																		// roll
 																		// in
 																		// variable
 																		// bonus
 																		// roll
 					scores[i + countRolls][0] = bonusRoll;
-				} else { //else roll second bonus roll without resetting the pins
+				} else { // else roll second bonus roll without resetting the
+							// pins
 					bonusRoll = (int) ((Math.random() * ((numPins - scores[10][0]) + 1)));
 					scores[i + 1][1] = bonusRoll;
 				}
